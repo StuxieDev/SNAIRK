@@ -1,0 +1,24 @@
+import { iconPaths } from '../data/iconPaths.js';
+
+// Brand mark for an AI, drawn in a single colour (Copilot keeps its own four colours).
+export default function Icon({ id, size = 22, color = '#ffffff' }) {
+  if (id === 'copilot') {
+    return (
+      <svg width={size} height={size} viewBox="0 23.3 512.1 465.4" style={{ display: 'block', flexShrink: 0 }} aria-hidden="true" focusable="false">
+        <path d="M374 62c-6.7-22.9-27.8-38.7-51.7-38.7h-15.7c-26 0-48.3 18.6-53 44.2l-26.9 146.8 6.7-22.9c6.7-23 27.8-38.8 51.7-38.8h91.4l38.3 14.9 36.9-14.9H441c-23.9 0-45-15.8-51.7-38.7z" fill="#0ea5e9" />
+        <path d="M143.5 449.8c6.7 23 27.8 38.9 51.8 38.9h33.4c29.2 0 53.1-23.3 53.9-52.5l3.6-141.5-7.6 26c-6.7 23-27.8 38.7-51.7 38.7h-92.2l-32.9-17.8-35.6 17.8h10.6c24 0 45.1 15.9 51.8 38.9z" fill="#ff5f3d" />
+        <path d="M320 23.3H133.4C80 23.3 48 93.7 26.7 164.2 1.4 247.7-31.6 359.4 64 359.4h80.6c24.1 0 45.2-15.9 51.8-39.1 14-49 38.6-134.5 57.9-199.6 9.8-33.1 18-61.5 30.5-79.2 7.1-9.9 18.8-18.2 35.2-18.2" fill="#98bd42" />
+        <path d="M192 488.7h186.7c53.3 0 85.3-70.5 106.7-141 25.3-83.5 58.3-195.2-37.3-195.2h-80.6c-24.1 0-45.2 15.9-51.8 39.1-14 49-38.6 134.6-57.9 199.7-9.8 33.1-18 61.5-30.5 79.2-7.2 9.9-18.9 18.2-35.3 18.2" fill="#f2598a" />
+      </svg>
+    );
+  }
+  const entry = iconPaths[id];
+  const d = entry?.d ?? entry ?? '';
+  const viewBox = entry?.vb ?? '0 0 24 24';
+  const fill = color.startsWith('#') ? color : `#${color}`;
+  return (
+    <svg width={size} height={size} viewBox={viewBox} fill={fill} style={{ display: 'block', flexShrink: 0 }} aria-hidden="true" focusable="false">
+      <path d={d} />
+    </svg>
+  );
+}

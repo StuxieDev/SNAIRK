@@ -1,0 +1,35 @@
+main status: 200
+chat reply: Certainly! 'Bubble' contains **3 B's**: positions 1, 3, 4. Gemini got 2. I got 3
+selected AI pressed: Claude
+pricing tiers: 4
+faq open aria: true
+theme: light
+footer text: SNAIRK | Seven AIs. Zero answers. Infinite snark. | Pick Your AI | Demo | Features | Pricing | FAQ | A STUXIEDEV PROJECT | Created with | / | / | love, code and coffee | by | StuxieDev | © 2026 StuxieDev. All snark reserved. | Boring Legal Stuff | Sitemap | v1.1.0 | Not affiliated with OpenAI, Google, Anthropic, xAI, Microsoft, Perplexity, or Meta. This is parody. Please don't sue us.
+disclaimer visible in hero: true
+mobile h-scroll: false
+360 h-scroll: false
+page /legal/: 200 h1=Boring Legal Stuff final=/legal/ hscroll=false
+page /legal/privacy/: 200 h1=Privacy Policy final=/legal/privacy/ hscroll=false
+page /legal/terms/: 200 h1=Terms and Ethics final=/legal/terms/ hscroll=false
+page /legal/cookies/: 200 h1=Cookies Policy final=/legal/cookies/ hscroll=false
+page /legal/imprint/: 200 h1=Imprint final=/legal/imprint/ hscroll=false
+page /legal/disclaimer/: 200 h1=Disclaimer final=/legal/disclaimer/ hscroll=false
+page /legal/opt-out/: 200 h1=Opt-Out Preferences final=/legal/opt-out/ hscroll=false
+page /changelogs/: 200 h1=Changelogs final=/changelogs/ hscroll=false
+changelog label order: Added,Changed,Fixed,Removed
+changelog label colour: #1e8449
+page /sitemap/: 200 h1=Sitemap final=/sitemap/ hscroll=false
+page /changelog/: 304 h1=Changelogs final=/changelogs/ hscroll=false
+page /404.html: 200 h1=Page not found final=/404.html hscroll=false
+client nav: http://localhost:4173/legal/
+dev banners: site-banner--dev
+dev --banner-h: 38px
+dev nav top: 38
+dev-banners banners: site-banner--maintenance,site-banner--soon,site-banner--dev,site-banner--site
+dev-banners --banner-h: 152px
+dev-banners nav top: 152
+prod banner count (expect 0): 0
+console errors/warnings: 2
+ERRORS:
+http://localhost:4174/ [error] Failed to load resource: the server responded with a status of 404 (Not Found)
+http://localhost:4174/ [error] Failed to load resource: the server responded with a status of 404 (Not Found)
