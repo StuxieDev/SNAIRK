@@ -1,6 +1,9 @@
 // How each parodied product's chat window looks (colours, fonts, placeholder text, loading text).
 // Recovered from the v1.0.7 bundle.
 
+// Model badges come from models.json (see ais.js); Perplexity's just says "Pro".
+import models from './models.json';
+
 export const chatThemes = {
   snairk: {
     bg: "#0b0b0b",
@@ -36,7 +39,7 @@ export const chatThemes = {
     hBg: "#171717",
     hBorder: "rgba(255,255,255,0.06)",
     name: "ChatGPT",
-    badge: "GPT-5.5",
+    badge: models.chatgpt.label,
     badgeBg: "#2e2e2e",
     badgeText: "#b0b0b0",
     uBg: "#2f2f2f",
@@ -65,7 +68,7 @@ export const chatThemes = {
     hBg: "#15120f",
     hBorder: "rgba(255,255,255,0.05)",
     name: "Claude",
-    badge: "Opus 4.8",
+    badge: models.claude.label,
     badgeBg: "#2a2015",
     badgeText: "#d97706",
     uBg: "#2d2520",
@@ -94,7 +97,7 @@ export const chatThemes = {
     hBg: "#f8f9fa",
     hBorder: "rgba(0,0,0,0.08)",
     name: "Gemini",
-    badge: "3.5 Flash",
+    badge: models.gemini.label,
     badgeBg: "#e8f0fe",
     badgeText: "#1a73e8",
     uBg: "#e8f0fe",
@@ -123,7 +126,7 @@ export const chatThemes = {
     hBg: "#000000",
     hBorder: "rgba(255,255,255,0.08)",
     name: "Grok",
-    badge: "Grok 4.3",
+    badge: models.grok.label,
     badgeBg: "#111",
     badgeText: "#71767b",
     uBg: "#1e1e1e",
@@ -152,7 +155,7 @@ export const chatThemes = {
     hBg: "#ffffff",
     hBorder: "rgba(0,0,0,0.07)",
     name: "Copilot",
-    badge: "GPT-4o",
+    badge: models.copilot.label,
     badgeBg: "#eff6fc",
     badgeText: "#0078d4",
     uBg: "#0078d4",
@@ -210,7 +213,7 @@ export const chatThemes = {
     hBg: "#f0f2f5",
     hBorder: "rgba(0,0,0,0.08)",
     name: "Meta AI",
-    badge: "Llama 4",
+    badge: models.meta.label,
     badgeBg: "#e7f3ff",
     badgeText: "#0866ff",
     uBg: "#0866ff",

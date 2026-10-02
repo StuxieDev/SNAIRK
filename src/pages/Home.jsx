@@ -9,6 +9,7 @@ import { faq } from '../data/faq.js';
 import { features } from '../data/features.js';
 import { pricing } from '../data/pricing.js';
 import { replies } from '../data/replies.js';
+import models from '../data/models.json';
 import { steps } from '../data/steps.js';
 
 function Hero() {
@@ -121,7 +122,7 @@ function Demo() {
     // SNAIRK has no replies of its own: it answers as one of the other seven, picked at random.
     const pick = (list) => list[Math.floor(Math.random() * list.length)];
     const from = ai.id === 'snairk' ? pick(ais.filter((a) => a.id !== 'snairk')) : ai;
-    const reply = pick(replies[from.id]);
+    const reply = pick(replies[from.id]).replaceAll('{model}', models[from.id]?.label ?? '');
     timer.current = setTimeout(() => {
       setAiMsg(reply);
       setAiVia(from.id === ai.id ? null : from.name);

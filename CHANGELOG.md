@@ -4,6 +4,14 @@ All notable changes to SNAIRK are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.4.0
+
+### Added
+- The AI versions keep themselves current: a GitHub Action checks OpenRouter's model list every day and, when an AI has a newer flagship model, updates it, releases a patch version and redeploys the site. The picker, the chat windows and the replies that name a model ("As GPT-6.1 Sol, …") all follow it
+
+### Changed
+- AI versions brought up to date: ChatGPT GPT-5.5 → GPT-6.1 Sol, Claude Opus 4.8 → Opus 5.5, Gemini 3.5 Flash → 3.8 Flash, Grok 4.3 → Grok 4.7, Copilot GPT-4o → GPT-6.1 Sol, Meta AI Llama 4 → Muse Spark 1.3 (Perplexity is still on Sonar Pro)
+
 ## v1.3.0
 
 ### Added

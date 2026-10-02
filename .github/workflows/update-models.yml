@@ -1,0 +1,53 @@
+name: Update AI versions
+
+# Every day, check whether any AI has a newer flagship model (from OpenRouter's public model
+# list) and, if so, update src/data/models.json, release a patch version and redeploy the site.
+# See scripts/update-models.mjs for how each AI's model is picked.
+
+on:
+  schedule:
+    - cron: '17 6 * * *' # daily, 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write # commit the update and tag the release
+  actions: write  # start the Pages deploy (pushes made here don't trigger other workflows)
+
+concurrency:
+  group: update-models
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check for newer models
+        id: models
+        run: node scripts/update-models.mjs --release
+
+      - name: Commit, tag and push the release
+        if: steps.models.outputs.changed == 'true'
+        env:
+          VERSION: ${{ steps.models.outputs.version }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add src/data/models.json VERSION.md package.json package-lock.json CHANGELOG.md
+          git commit -m "Release v${VERSION}" -m "AI versions updated automatically. See CHANGELOG.md for details."
+          git tag -a "v${VERSION}" -m "SNAIRK v${VERSION}"
+          git push origin HEAD:main "v${VERSION}"
+
+      - name: Deploy the site
+        if: steps.models.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
