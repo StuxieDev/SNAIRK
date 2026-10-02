@@ -4,6 +4,11 @@ All notable changes to SNAIRK are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.2.4
+
+### Fixed
+- The logo icon in the header and footer is the same height as the "SNAIRK" lettering and lines up with it; it was taller than the letters
+
 ## v1.2.3
 
 ### Changed

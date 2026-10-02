@@ -137,6 +137,9 @@ body{margin:0;background:#080808}
 /* Footer SNAIRK logo: the header's logo, larger, greyed out until hovered */
 .foot-logo{display:inline-flex;align-items:center;gap:10px;font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:4px;line-height:1;color:var(--ink);text-decoration:none;filter:grayscale(1);opacity:.55;transition:filter .2s ease,opacity .2s ease,color .4s}
 .foot-logo svg{flex-shrink:0}
+/* Logo icon (header and footer) is the height of the wordmark's capitals: Bebas Neue's caps
+   are 0.7em tall and sit 0.05em above the line's centre, so the icon matches both */
+.nav-logo svg,.foot-logo svg{width:.7em;height:.7em;position:relative;top:-.05em}
 .foot-logo:hover,.foot-logo:focus-visible{filter:grayscale(0);opacity:1}
 @media (prefers-reduced-motion:reduce){.foot-logo{transition:none}}
 .foot-logo + .foot-tag{margin-top:10px}
