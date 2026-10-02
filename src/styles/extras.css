@@ -134,12 +134,9 @@ body{margin:0;background:#080808}
   .ai-card:hover,.feat-card:hover,.btn-p:hover,.hub a:hover{transform:none}
 }
 
-/* Footer SNAIRK logo (icon + wordmark): muted until hovered, the right version per theme */
-.foot-logo{display:inline-flex;align-items:center;line-height:0}
-.foot-logo-img{display:block;height:36px;width:auto;filter:grayscale(1);opacity:.55;transition:filter .2s ease,opacity .2s ease}
-.foot-logo:hover .foot-logo-img,.foot-logo:focus-visible .foot-logo-img{filter:grayscale(0);opacity:1}
-.foot-logo .on-light{display:none}
-:root[data-theme="light"] .foot-logo .on-dark{display:none}
-:root[data-theme="light"] .foot-logo .on-light{display:block}
-@media (prefers-reduced-motion:reduce){.foot-logo-img{transition:none}}
+/* Footer SNAIRK logo: the header's logo, larger, greyed out until hovered */
+.foot-logo{display:inline-flex;align-items:center;gap:10px;font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:4px;line-height:1;color:var(--ink);text-decoration:none;filter:grayscale(1);opacity:.55;transition:filter .2s ease,opacity .2s ease,color .4s}
+.foot-logo svg{flex-shrink:0}
+.foot-logo:hover,.foot-logo:focus-visible{filter:grayscale(0);opacity:1}
+@media (prefers-reduced-motion:reduce){.foot-logo{transition:none}}
 .foot-logo + .foot-tag{margin-top:10px}

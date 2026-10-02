@@ -25,10 +25,13 @@ export default function Footer() {
     <footer className="foot">
       <div className="foot-top">
         <div>
-          {/* Icon + wordmark, greyed out until hovered (like the StuxieDev mark below) */}
-          <Link href="/" className="foot-logo" aria-label="SNAIRK home">
-            <img className="foot-logo-img on-dark" src="/brand/logo-dark.svg" alt="SNAIRK" width="132" height="36" />
-            <img className="foot-logo-img on-light" src="/brand/logo-light.svg" alt="" aria-hidden="true" width="132" height="36" />
+          {/* The header's logo (icon + wordmark in the selected AI's colour), greyed out until hovered */}
+          <Link href="/" className="foot-logo">
+            <svg width="30" height="30" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+              <rect width="100" height="100" rx="18" fill="var(--ink)" opacity="0.15" />
+              <path d="M62 8L34 52h22L38 92 72 44H50Z" fill="var(--ink)" />
+            </svg>
+            SNAIRK
           </Link>
           <div className="foot-tag">Seven AIs. Zero answers. Infinite snairk.</div>
         </div>

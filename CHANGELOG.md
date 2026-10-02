@@ -4,6 +4,11 @@ All notable changes to SNAIRK are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.2.1
+
+### Fixed
+- The footer logo matches the header's: the lightning icon and "SNAIRK" wordmark in the selected AI's colour (larger, greyed out until you hover over it), instead of the fixed brand-file version, which used different colours and lettering
+
 ## v1.2.0
 
 ### Changed
