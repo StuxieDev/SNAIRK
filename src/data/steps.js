@@ -2,7 +2,7 @@ export const steps = [
   {
     n: '01',
     t: 'Pick Your AI',
-    d: 'Choose from seven platforms. Each embodies its respective brand of unhelpfulness with total commitment.',
+    d: 'Choose from eight platforms. Each embodies its respective brand of unhelpfulness with total commitment.',
   },
   {
     n: '02',

@@ -3,9 +3,9 @@ export const routes = [
   {
     path: '/',
     page: 'home',
-    title: 'SNAIRK — Seven AIs. Zero useful answers. Infinite snairk.',
+    title: 'SNAIRK — Eight AIs. Zero useful answers. Infinite snairk.',
     description:
-      'Seven AI parodies. Zero useful answers. Pick ChatGPT, Claude, Gemini, Grok, Copilot, Perplexity, or Meta AI and get snairked.',
+      'Eight AIs. Zero useful answers. Pick ChatGPT, Claude, Gemini, Grok, Copilot, Perplexity, Meta AI, or SNAIRK (all of them at random) and get snairked.',
     label: 'Home',
     blurb: 'Pick an AI and get snairked.',
     changefreq: 'monthly',

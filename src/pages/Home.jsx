@@ -19,7 +19,7 @@ function Hero() {
         Snairk {VERSION} — Now with 700% more contempt
       </div>
       <h1 className="htitle">SNAIRK</h1>
-      <p className="hsub">Seven AIs. Zero useful answers. Infinite snairk.</p>
+      <p className="hsub">Eight AIs. Zero useful answers. Infinite snairk.</p>
       <p className="hdesc">
         Pick which major AI disappoints you today — ChatGPT, Claude, Gemini, Grok, Copilot, Perplexity, Meta AI — all at
         their absolute worst, on demand.
@@ -95,6 +95,7 @@ function Demo() {
   const [input, setInput] = useState('');
   const [userMsg, setUserMsg] = useState(null);
   const [aiMsg, setAiMsg] = useState(null);
+  const [aiVia, setAiVia] = useState(null);
   const [loading, setLoading] = useState(false);
   const timer = useRef(null);
 
@@ -103,6 +104,7 @@ function Demo() {
     clearTimeout(timer.current);
     setUserMsg(null);
     setAiMsg(null);
+    setAiVia(null);
     setLoading(false);
     setInput('');
   }, [ai.id]);
@@ -115,10 +117,14 @@ function Demo() {
     setInput('');
     setLoading(true);
     setAiMsg(null);
-    const pool = replies[ai.id];
-    const reply = pool[Math.floor(Math.random() * pool.length)];
+    setAiVia(null);
+    // SNAIRK has no replies of its own: it answers as one of the other seven, picked at random.
+    const pick = (list) => list[Math.floor(Math.random() * list.length)];
+    const from = ai.id === 'snairk' ? pick(ais.filter((a) => a.id !== 'snairk')) : ai;
+    const reply = pick(replies[from.id]);
     timer.current = setTimeout(() => {
       setAiMsg(reply);
+      setAiVia(from.id === ai.id ? null : from.name);
       setLoading(false);
     }, 400 + Math.random() * 500);
   };
@@ -144,7 +150,7 @@ function Demo() {
             <div className="demo-sel-tag">&ldquo;{ai.tagline}&rdquo;</div>
           </div>
         </div>
-        <ChatShell ai={ai} userMsg={userMsg} aiMsg={aiMsg} loading={loading} input={input} setInput={setInput} onSubmit={submit} />
+        <ChatShell ai={ai} userMsg={userMsg} aiMsg={aiMsg} aiVia={aiVia} loading={loading} input={input} setInput={setInput} onSubmit={submit} />
         <p className="demo-fine">Satire, not AI · Not affiliated with any parodied platform · Obviously</p>
       </div>
     </section>

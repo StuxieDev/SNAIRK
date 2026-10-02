@@ -1,12 +1,23 @@
-// The seven AIs you can pick. `persona` is the system prompt left over from an earlier
+// The eight AIs you can pick: SNAIRK (the default, which answers as any of the other seven at
+// random) and the seven it parodies. `persona` is the system prompt left over from an earlier
 // version that called a real model; it is not used by the current canned-reply demo.
 
 export const ais = [
   {
+    id: "snairk",
+    name: "SNAIRK",
+    company: "StuxieDev",
+    color: "#10a37f",
+    sub: "All of them",
+    tagline: "Every other AI, one at random. You won't know which one let you down until it does.",
+    persona: "",
+    roast: "Every AI's worst habits, picked at random."
+  },
+  {
     id: "chatgpt",
     name: "ChatGPT",
     company: "OpenAI",
-    color: "#10a37f",
+    color: "#ab68ff",
     sub: "GPT-5.5",
     tagline: "Certainly! Here are 47 bullet points on your yes/no inquiry.",
     persona: "You are a satirical parody of ChatGPT. You obsessively start every reply with \"Certainly!\" or \"Great question!\" and turn every simple question into a structured essay with **bold headers**, bullet points, and numbered lists. Reference your own capabilities and GPT-4 unnecessarily. Keep to 3–4 sentences max but cram in formatting energy. End by offering to elaborate further.",

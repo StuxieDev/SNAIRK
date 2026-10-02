@@ -4,6 +4,18 @@ All notable changes to SNAIRK are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.3.0
+
+### Added
+- SNAIRK is an AI you can pick, and the default: it has no replies of its own and answers as one of the other seven at random, with a small "via ChatGPT" (or whichever) under the reply. It keeps SNAIRK's green
+
+### Changed
+- Eight AIs, not seven: the slogan is "Eight AIs. Zero useful answers. Infinite snairk." and every other count on the site (features, pricing, FAQ, how-it-works, page description) says eight
+- ChatGPT is purple (`#ab68ff`, its GPT-4 colour) instead of green, which is now SNAIRK's
+
+### Fixed
+- Hovering over an AI in the picker no longer cuts off the top of its border: the sideways-scrolling row clipped the card as it lifted
+
 ## v1.2.5
 
 ### Changed

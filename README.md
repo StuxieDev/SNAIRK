@@ -8,9 +8,9 @@
 
 # SNAIRK
 
-### *Seven AIs. Zero useful answers. Infinite snairk.*
+### *Eight AIs. Zero useful answers. Infinite snairk.*
 
-SNAIRK is a satirical parody of snarky AI chat products. Pick ChatGPT, Claude, Gemini, Grok, Copilot, Perplexity or Meta AI and get a canned, in-character brush-off in a chat window styled like the real thing. There is **no real AI**, nothing is sent anywhere, and it is **not affiliated** with any company it parodies.
+SNAIRK is a satirical parody of snarky AI chat products. Pick ChatGPT, Claude, Gemini, Grok, Copilot, Perplexity, Meta AI or SNAIRK (all of them at random) and get a canned, in-character brush-off in a chat window styled like the real thing. There is **no real AI**, nothing is sent anywhere, and it is **not affiliated** with any company it parodies.
 
 - Vite, React and plain CSS; fonts self-hosted
 - Every route is pre-rendered to static HTML and hydrated, so it hosts anywhere, including GitHub Pages

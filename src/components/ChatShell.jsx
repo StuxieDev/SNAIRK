@@ -3,7 +3,7 @@ import { chatThemes } from '../data/chatThemes.js';
 import Icon from './Icon.jsx';
 
 // A fake chat window skinned like the selected product.
-export default function ChatShell({ ai, userMsg, aiMsg, loading, input, setInput, onSubmit }) {
+export default function ChatShell({ ai, userMsg, aiMsg, aiVia, loading, input, setInput, onSubmit }) {
   const t = chatThemes[ai.id];
   const light = t.light;
   const fieldId = useId();
@@ -57,6 +57,11 @@ export default function ChatShell({ ai, userMsg, aiMsg, loading, input, setInput
               }}
             >
               {loading ? <span className="ltxt">{t.lText}</span> : aiMsg}
+              {!loading && aiVia && (
+                <span className="ai-via" style={{ color: t.s2 }}>
+                  via {aiVia}
+                </span>
+              )}
             </div>
           </div>
         )}

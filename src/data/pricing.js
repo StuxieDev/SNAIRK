@@ -3,7 +3,7 @@ export const pricing = [
     name: "Free but Very Limited",
     price: "$0",
     period: "/ forever",
-    desc: "You get the worst of all 7 AIs. Which is still free, which is frankly too generous.",
+    desc: "You get the worst of all 8 AIs. Which is still free, which is frankly too generous.",
     features: [
       "3 snairk replies per day",
       "Watermark reads 'yikes'",
@@ -17,7 +17,7 @@ export const pricing = [
     name: "Pro but Still Limited",
     price: "$69",
     period: "/ month",
-    desc: "Full access to all 7 AI personalities. Each uniquely terrible.",
+    desc: "Full access to all 8 AI personalities. Each uniquely terrible.",
     features: [
       "Unlimited 'Certainly!' responses",
       "ChatGPT essays on everything",

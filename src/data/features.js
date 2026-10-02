@@ -7,7 +7,7 @@ export const features = [
   {
     icon: "🪜",
     title: "Multi-Platform Condescension",
-    desc: "Seven distinct flavours of dismissal. Pick the AI whose specific brand of uselessness fits your situation."
+    desc: "Eight distinct flavours of dismissal. Pick the AI whose specific brand of uselessness fits your situation."
   },
   {
     icon: "🕯️",

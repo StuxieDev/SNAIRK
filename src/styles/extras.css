@@ -143,3 +143,10 @@ body{margin:0;background:#080808}
 .foot-logo:hover,.foot-logo:focus-visible{filter:grayscale(0);opacity:1}
 @media (prefers-reduced-motion:reduce){.foot-logo{transition:none}}
 .foot-logo + .foot-tag{margin-top:10px}
+
+/* The picker scrolls sideways, which clips anything outside it: leave room for a hovered
+   card's 4px lift so its top border isn't cut off */
+.ai-scroll{padding-top:6px}
+
+/* SNAIRK's replies say which of the seven AIs actually answered */
+.ai-via{display:block;margin-top:8px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.5px}

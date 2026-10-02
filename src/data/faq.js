@@ -5,7 +5,7 @@ export const faq = [
   },
   {
     q: "Which AI is the worst?",
-    a: "All of them, in different and exciting ways. We've benchmarked across seven platforms and the scientific answer is: yes."
+    a: "All of them, in different and exciting ways. We've benchmarked across eight platforms and the scientific answer is: yes."
   },
   {
     q: "Can I turn it off?",
