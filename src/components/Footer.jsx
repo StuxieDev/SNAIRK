@@ -33,7 +33,7 @@ export default function Footer() {
             </svg>
             SNAIRK
           </Link>
-          <div className="foot-tag">Seven AIs. Zero answers. Infinite snairk.</div>
+          <div className="foot-tag">Seven AIs. Zero useful answers. Infinite snairk.</div>
         </div>
         <nav className="foot-links" aria-label="Footer">
           {anchors.map(([id, label]) => (

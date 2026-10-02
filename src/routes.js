@@ -3,7 +3,7 @@ export const routes = [
   {
     path: '/',
     page: 'home',
-    title: 'SNAIRK — Seven AIs. Zero answers. Infinite snairk.',
+    title: 'SNAIRK — Seven AIs. Zero useful answers. Infinite snairk.',
     description:
       'Seven AI parodies. Zero useful answers. Pick ChatGPT, Claude, Gemini, Grok, Copilot, Perplexity, or Meta AI and get snairked.',
     label: 'Home',

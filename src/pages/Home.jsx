@@ -20,7 +20,7 @@ function Hero() {
       <h1 className="htitle">
         SNAIRK<span>.</span>
       </h1>
-      <p className="hsub">Seven AIs. Zero answers. Infinite snairk.</p>
+      <p className="hsub">Seven AIs. Zero useful answers. Infinite snairk.</p>
       <p className="hdesc">
         Pick which major AI disappoints you today — ChatGPT, Claude, Gemini, Grok, Copilot, Perplexity, Meta AI — all at
         their absolute worst, on demand.
