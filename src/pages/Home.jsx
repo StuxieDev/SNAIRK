@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useApp } from '../AppContext.jsx';
 import ChatShell from '../components/ChatShell.jsx';
+import { VERSION } from '../config.js';
 import Icon from '../components/Icon.jsx';
 import { Link } from '../router.jsx';
 import { ais } from '../data/ais.js';
@@ -15,11 +16,9 @@ function Hero() {
     <section className="hero">
       <div className="badge">
         <span className="dot" aria-hidden="true" />
-        Snairk 1.0 — Now with 700% more contempt
+        Snairk {VERSION} — Now with 700% more contempt
       </div>
-      <h1 className="htitle">
-        SNAIRK<span>.</span>
-      </h1>
+      <h1 className="htitle">SNAIRK</h1>
       <p className="hsub">Seven AIs. Zero useful answers. Infinite snairk.</p>
       <p className="hdesc">
         Pick which major AI disappoints you today — ChatGPT, Claude, Gemini, Grok, Copilot, Perplexity, Meta AI — all at
@@ -33,7 +32,7 @@ function Hero() {
           Pick Your AI
         </a>
       </div>
-      <p className="pow">Powered by Snairk 1.0 · Not affiliated with anyone · Obviously</p>
+      <p className="pow">Powered by Snairk {VERSION} · Not affiliated with anyone · Obviously</p>
       <p className="pow" style={{ marginTop: 12 }}>
         This is satire: no real AI, no data collected, not affiliated with any company it parodies.{' '}
         <Link href="/legal/disclaimer/" style={{ color: 'inherit' }}>

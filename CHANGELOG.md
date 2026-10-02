@@ -4,6 +4,14 @@ All notable changes to SNAIRK are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## v1.2.5
+
+### Changed
+- The home page title is "SNAIRK" in the logo's colour (the selected AI's), instead of white "SNAIRK." with only the full stop coloured
+
+### Fixed
+- The hero badge and "Powered by Snairk" line show the site's real version (from `VERSION.md`) instead of always saying 1.0
+
 ## v1.2.4
 
 ### Fixed

@@ -1,6 +1,6 @@
 {
   "name": "snairk",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "private": true,
   "description": "SNAIRK: a satirical parody of snarky AI chat products. No real AI, no data collected.",
   "type": "module",
