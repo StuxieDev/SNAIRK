@@ -133,3 +133,13 @@ body{margin:0;background:#080808}
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
   .ai-card:hover,.feat-card:hover,.btn-p:hover,.hub a:hover{transform:none}
 }
+
+/* Footer SNAIRK logo (icon + wordmark): muted until hovered, the right version per theme */
+.foot-logo{display:inline-flex;align-items:center;line-height:0}
+.foot-logo-img{display:block;height:36px;width:auto;filter:grayscale(1);opacity:.55;transition:filter .2s ease,opacity .2s ease}
+.foot-logo:hover .foot-logo-img,.foot-logo:focus-visible .foot-logo-img{filter:grayscale(0);opacity:1}
+.foot-logo .on-light{display:none}
+:root[data-theme="light"] .foot-logo .on-dark{display:none}
+:root[data-theme="light"] .foot-logo .on-light{display:block}
+@media (prefers-reduced-motion:reduce){.foot-logo-img{transition:none}}
+.foot-logo + .foot-tag{margin-top:10px}

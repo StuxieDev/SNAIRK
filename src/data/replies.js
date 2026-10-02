@@ -1,4 +1,4 @@
-// Canned snark replies, 69 per AI. The demo picks one at random.
+// Canned snairk replies, 69 per AI. The demo picks one at random.
 
 export const replies = {
   chatgpt: [

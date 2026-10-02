@@ -26,7 +26,7 @@ export function NotFound() {
   return (
     <DocPage title="Page not found" lead="That page doesn't exist. Neither does a useful answer, but at least this one is honest." crumbs={[['/', 'Home']]} current="404">
       <p>
-        <Link href="/">Back to the snark</Link> · <Link href="/sitemap/">Sitemap</Link>
+        <Link href="/">Back to the snairk</Link> · <Link href="/sitemap/">Sitemap</Link>
       </p>
     </DocPage>
   );

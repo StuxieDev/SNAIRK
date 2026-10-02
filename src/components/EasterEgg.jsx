@@ -20,7 +20,7 @@ export default function EasterEgg({ onClose }) {
         69
       </div>
       <div className="egg-title" id="egg-title">
-        Achievement Unlocked: Thoroughly Snarked
+        Achievement Unlocked: Thoroughly Snairked
       </div>
       <div className="egg-sub">you clicked 69 times. we&apos;re both impressed and concerned.</div>
       <button type="button" className="egg-btn" ref={btn} onClick={onClose}>

@@ -120,7 +120,6 @@ body{background:#080808}
 /* ── Footer ── */
 .foot{padding:52px 48px 32px;border-top:1px solid #0f0f0f;background:#060606}
 .foot-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:24px;margin-bottom:40px}
-.foot-logo{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--ink);letter-spacing:4px;transition:color .4s}
 .foot-tag{font-size:12px;color:var(--t3);margin-top:3px}
 .foot-links{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
 .foot-links a{font-size:12px;color:var(--t3);text-decoration:none;transition:color .2s}
@@ -194,7 +193,6 @@ body{background:#080808}
 :root[data-theme="light"] .sn .faq-q:hover{color:#111}
 :root[data-theme="light"] .sn .faq-a{color:#666}
 :root[data-theme="light"] .sn .foot{background:#eaecef;border-top-color:#e5e7eb}
-:root[data-theme="light"] .sn .foot-logo{color:var(--ink)}
 :root[data-theme="light"] .sn .foot-tag{color:#5c5c66}
 :root[data-theme="light"] .sn .foot-links a{color:#5c5c66}
 :root[data-theme="light"] .sn .foot-links a:hover{color:#444}

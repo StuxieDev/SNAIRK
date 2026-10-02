@@ -11,7 +11,7 @@ export const steps = [
   },
   {
     n: '03',
-    t: 'Get Snarked',
+    t: 'Get Snairked',
     d: 'Receive a response that is technically words. Whether those words help you is, frankly, not the point.',
   },
 ];

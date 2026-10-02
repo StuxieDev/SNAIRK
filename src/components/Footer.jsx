@@ -25,8 +25,12 @@ export default function Footer() {
     <footer className="foot">
       <div className="foot-top">
         <div>
-          <div className="foot-logo">SNAIRK</div>
-          <div className="foot-tag">Seven AIs. Zero answers. Infinite snark.</div>
+          {/* Icon + wordmark, greyed out until hovered (like the StuxieDev mark below) */}
+          <Link href="/" className="foot-logo" aria-label="SNAIRK home">
+            <img className="foot-logo-img on-dark" src="/brand/logo-dark.svg" alt="SNAIRK" width="132" height="36" />
+            <img className="foot-logo-img on-light" src="/brand/logo-light.svg" alt="" aria-hidden="true" width="132" height="36" />
+          </Link>
+          <div className="foot-tag">Seven AIs. Zero answers. Infinite snairk.</div>
         </div>
         <nav className="foot-links" aria-label="Footer">
           {anchors.map(([id, label]) => (
@@ -66,7 +70,7 @@ export default function Footer() {
 
       <div className="foot-bot">
         <div className="foot-copy">
-          © <Years /> StuxieDev. All snark reserved.
+          © <Years /> StuxieDev. All snairk reserved.
         </div>
         <nav className="foot-links" aria-label="Site information">
           <Link href="/legal/">Boring Legal Stuff</Link>

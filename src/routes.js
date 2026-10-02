@@ -5,9 +5,9 @@ export const routes = [
     page: 'home',
     title: 'SNAIRK — Seven AIs. Zero Answers. Infinite Judgment.',
     description:
-      'Seven AI parodies. Zero useful answers. Pick ChatGPT, Claude, Gemini, Grok, Copilot, Perplexity, or Meta AI and get snarked.',
+      'Seven AI parodies. Zero useful answers. Pick ChatGPT, Claude, Gemini, Grok, Copilot, Perplexity, or Meta AI and get snairked.',
     label: 'Home',
-    blurb: 'Pick an AI and get snarked.',
+    blurb: 'Pick an AI and get snairked.',
     changefreq: 'monthly',
     priority: '1.0',
   },

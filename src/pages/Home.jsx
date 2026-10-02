@@ -27,13 +27,13 @@ function Hero() {
       </p>
       <div className="hbtns">
         <a href="#demo" className="btn-p">
-          Get Snarked →
+          Get Snairked →
         </a>
         <a href="#pick" className="btn-g">
           Pick Your AI
         </a>
       </div>
-      <p className="pow">Powered by Snark 1.0 · Not affiliated with anyone · Obviously</p>
+      <p className="pow">Powered by Snairk 1.0 · Not affiliated with anyone · Obviously</p>
       <p className="pow" style={{ marginTop: 12 }}>
         This is satire: no real AI, no data collected, not affiliated with any company it parodies.{' '}
         <Link href="/legal/disclaimer/" style={{ color: 'inherit' }}>
@@ -132,7 +132,7 @@ function Demo() {
           <h2 className="stitle" id="demo-title">
             Ask <span style={{ color: 'var(--ink)', transition: 'color .4s' }}>{ai.name}</span> anything.
           </h2>
-          <p className="demo-note">Hand-written snark, zero actual AI. Switch AIs above.</p>
+          <p className="demo-note">Hand-written snairk, zero actual AI. Switch AIs above.</p>
         </div>
         <div className="demo-selected" style={{ borderColor: `${accent}22` }}>
           <div className="demo-sel-icon" style={{ background: `${accent}1a` }}>

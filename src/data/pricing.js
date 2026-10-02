@@ -5,10 +5,10 @@ export const pricing = [
     period: "/ forever",
     desc: "You get the worst of all 7 AIs. Which is still free, which is frankly too generous.",
     features: [
-      "3 snark replies per day",
+      "3 snairk replies per day",
       "Watermark reads 'yikes'",
       "Gemini may book a flight",
-      "Community support (also Snark)"
+      "Community support (also Snairk)"
     ],
     cta: "Sign up. Or don't.",
     hot: false
@@ -51,7 +51,7 @@ export const pricing = [
       "All Business features",
       "Grok posts on your LinkedIn",
       "Meta AI audits your Slack history",
-      "Dedicated Snark account manager",
+      "Dedicated Snairk account manager",
       "Claude refuses your onboarding docs",
       "Refunds: 'cope harder, champ'"
     ],
