@@ -4,7 +4,12 @@ All notable changes to SNAIRK are documented here. The format is based on
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## v1.4.0
+## v1.5.0
+
+### Changed
+- New SNAIRK logo: a smirking robot in a speech bubble replaces the lightning bolt everywhere, in the nav and footer, as SNAIRK's own card in the picker, in the live favicon (still drawn in the selected AI's colour), in `public/brand/` (icon and both wordmarks) and in the favicon and app icons
+- The link-preview image (`og.png`) is redrawn with the new logo, the current tagline ("Eight AIs. Zero useful answers. Infinite snairk.") and the current address, `snairk.stuxie.dev`; it still said "Seven AIs" and `snairk.stux.dev`
+
 
 ### Added
 - The AI versions keep themselves current: a GitHub Action checks OpenRouter's model list every day and, when an AI has a newer flagship model, updates it, releases a patch version and redeploys the site. The picker, the chat windows and the replies that name a model ("As GPT-6.1 Sol, …") all follow it
