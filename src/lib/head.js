@@ -1,4 +1,5 @@
 import { SITE_URL, SITE_NAME, OG_IMAGE, TWITTER_HANDLE } from '../config.js';
+import { discordEmbedHtml } from './discord.js';
 
 const esc = (s) => s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
 
@@ -9,6 +10,7 @@ export function headHtml(route) {
   const robots = route.hidden ? '<meta name="robots" content="noindex"/>\n    ' : '';
   const refresh = route.redirect ? `<meta http-equiv="refresh" content="0; url=${route.redirect}"/>\n    ` : '';
   const canonical = route.redirect ? SITE_URL + route.redirect : url;
+  const discord = discordEmbedHtml(route);
   return `<title>${esc(route.title)}</title>
     <meta name="description" content="${esc(route.description)}"/>
     ${robots}${refresh}<link rel="canonical" href="${canonical}"/>
@@ -25,7 +27,8 @@ export function headHtml(route) {
     <meta name="twitter:title" content="${esc(route.title)}"/>
     <meta name="twitter:description" content="${esc(route.description)}"/>
     <meta name="twitter:image" content="${image}"/>
-    <meta name="twitter:creator" content="${TWITTER_HANDLE}"/>`;
+    <meta name="twitter:creator" content="${TWITTER_HANDLE}"/>${discord ? `
+    ${discord}` : ''}`;
 }
 
 function setMeta(selector, attr, value) {

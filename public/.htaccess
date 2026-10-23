@@ -16,3 +16,4 @@ ErrorDocument 404 /404.html
   ExpiresByType text/css "access plus 1 year"
   ExpiresByType application/javascript "access plus 1 year"
 </IfModule>
+AddType application/manifest+json .webmanifest

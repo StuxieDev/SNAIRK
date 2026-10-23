@@ -40,11 +40,14 @@ Before a release: tab through the main page, check both themes, check at 360px w
 
 All six live under `/legal/` (`privacy`, `terms`, `cookies`, `imprint`, `disclaimer`, `opt-out`) in `src/pages/Legal.jsx`. Keep them in sync with what the site actually does: if analytics, a form, or any new browser storage is ever added, the privacy and cookies pages need a real update.
 
-## Versioning and changelog
+## Versioning
 
-- The version lives in `VERSION.md` (a bare version string). Bump it on every release
-- Every release gets a `CHANGELOG.md` entry with `### Added`, `### Changed`, `### Fixed`, `### Removed`, `### Security` and `### Deprecated` subsections, in that order, never a bare bullet list under a version heading
-- `commit.sh` (bash) and `commit.bat` (Windows) read `VERSION.md` and handle the commit and `git tag`; don't hand-write the release commit or tag
+This project uses [Date Versioning](https://datevers.ing). To release:
+
+1. Add a `## vYY.MM.DD` entry at the top of `CHANGELOG.md`, with its sections in this order: Added, Changed, Fixed, Removed, Security, Deprecated.
+2. Set `VERSION.md` to the same bare version (no `v`): today's **UTC** date as `YY.MM.DD`, or `YY.MM.DD-1`, `-2`… for later releases the same UTC day. Never a future date. Use UTC, not local time: just after midnight in the UK it is still the previous day in UTC.
+3. Run `bash tests/version.sh`.
+4. Run `./commit.sh` (or `commit.bat` on Windows). It checks the version, commits and tags `vYY.MM.DD`, and never pushes.
 
 ## Deployment
 

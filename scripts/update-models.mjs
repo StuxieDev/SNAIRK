@@ -3,11 +3,12 @@
 // and rewrites src/data/models.json if any changed. Run daily by .github/workflows/update-models.yml.
 //
 //   node scripts/update-models.mjs            update src/data/models.json only
-//   node scripts/update-models.mjs --release  also bump the patch version and add a changelog entry
+//   node scripts/update-models.mjs --release  also release a new Date Version and add a changelog entry
 //
 // Copilot has no model list of its own: it runs on OpenAI's models, so it follows ChatGPT.
 // If OpenRouter can't be reached, or a family has no match, nothing is changed.
 import { readFileSync, writeFileSync, appendFileSync } from 'node:fs';
+import { nextDateVersion, semverForm } from './datever.mjs';
 
 const root = new URL('../', import.meta.url);
 const file = (p) => new URL(p, root);
@@ -75,13 +76,13 @@ output('changed', 'true');
 
 if (process.argv.includes('--release')) {
   const version = readFileSync(file('VERSION.md'), 'utf8').trim().replace(/^v/i, '');
-  const [maj, min, pat] = version.split('.').map(Number);
-  const bumped = `${maj}.${min}.${pat + 1}`;
+  // Date Versioning: the UTC date as YY.MM.DD, plus -1, -2... when tags for that date already exist.
+  const bumped = nextDateVersion();
   writeFileSync(file('VERSION.md'), bumped + '\n');
   // package.json has the version once; package-lock.json has the project's twice, at the top
   for (const [p, times] of [['package.json', 1], ['package-lock.json', 2]]) {
     let text = readFileSync(file(p), 'utf8');
-    for (let i = 0; i < times; i++) text = text.replace(`"version": "${version}"`, `"version": "${bumped}"`);
+    for (let i = 0; i < times; i++) text = text.replace(`"version": "${semverForm(version)}"`, `"version": "${semverForm(bumped)}"`);
     writeFileSync(file(p), text);
   }
   const log = readFileSync(file('CHANGELOG.md'), 'utf8');

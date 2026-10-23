@@ -63,17 +63,11 @@ docs/           notes on what was recovered from that build
 
 ## AI versions
 
-The model each AI is shown with ("GPT-6.1 Sol · OpenAI", "Opus 5.5 · Anthropic"…) lives in `src/data/models.json`; the picker, the chat windows and the canned replies (`{model}` in `src/data/replies.js`) all read it. `.github/workflows/update-models.yml` runs `scripts/update-models.mjs` every day at 06:17 UTC: it reads [OpenRouter's public model list](https://openrouter.ai/api/v1/models), picks the newest model in each AI's flagship family, and if any changed, updates the file, releases a patch version (changelog entry included, committed by `github-actions[bot]`) and redeploys the site. Copilot follows ChatGPT, since it runs on OpenAI's models. Run it by hand with `node scripts/update-models.mjs`, or from the Actions tab (**Update AI versions → Run workflow**).
+The model each AI is shown with ("GPT-6.1 Sol · OpenAI", "Opus 5.5 · Anthropic"…) lives in `src/data/models.json`; the picker, the chat windows and the canned replies (`{model}` in `src/data/replies.js`) all read it. `.github/workflows/update-models.yml` runs `scripts/update-models.mjs` every day at 06:17 UTC: it reads [OpenRouter's public model list](https://openrouter.ai/api/v1/models), picks the newest model in each AI's flagship family, and if any changed, updates the file, releases a new Date Version (changelog entry included, committed by `github-actions[bot]`) and redeploys the site. Copilot follows ChatGPT, since it runs on OpenAI's models. Run it by hand with `node scripts/update-models.mjs`, or from the Actions tab (**Update AI versions → Run workflow**).
 
-## Releasing
+## Versioning
 
-1. Update `CHANGELOG.md` (sections in the order Added, Changed, Fixed, Removed, Security, Deprecated)
-2. Bump `VERSION.md`
-3. Update this README if relevant
-4. Run `./commit.sh` (or `commit.bat`): it reads `VERSION.md`, commits, and tags `vX.Y.Z`
-5. `git push origin main --tags`
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for conventions.
+This project uses [Date Versioning](https://datevers.ing): each release is numbered by its UTC release date as `YY.MM.DD` (for example `26.10.23`), with `-1`, `-2`… for later releases the same day. See [CHANGELOG.md](CHANGELOG.md) for what changed in each release and [CONTRIBUTING.md](CONTRIBUTING.md) for the release steps.
 
 ## License
 
