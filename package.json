@@ -1,6 +1,6 @@
 {
   "name": "snairk",
-  "version": "26.10.2300",
+  "version": "26.10.2600",
   "private": true,
   "description": "SNAIRK: a satirical parody of snarky AI chat products. No real AI, no data collected.",
   "type": "module",
@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "engines": {
-    "node": ">=20.19"
+    "node": ">=22"
   },
   "dependencies": {
     "@fontsource/bebas-neue": "5.3.0",

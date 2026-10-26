@@ -6,6 +6,12 @@ All notable changes to SNAIRK are documented here. The format is based on
 
 Since v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
+## v26.10.26
+
+### Security
+
+- The minimum Node.js version (`engines`) is now 22 instead of 20.19, since the end-of-life Node.js 20 has no fix for the Brotli decoder vulnerability CVE-2026-111497
+
 ## v26.10.23
 
 ### Added

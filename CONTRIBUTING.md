@@ -20,7 +20,7 @@ cd SNAIRK
 ./dev-server.sh
 ```
 
-Needs Node 20.19 or newer. `dev-server.sh` (or `.bat`) installs dependencies on first run and starts Vite with dev mode on; pass `--no-dev-mode` to see the site as production does.
+Needs Node 22 or newer. `dev-server.sh` (or `.bat`) installs dependencies on first run and starts Vite with dev mode on; pass `--no-dev-mode` to see the site as production does.
 
 ## Conventions
 
