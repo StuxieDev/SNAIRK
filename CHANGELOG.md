@@ -6,6 +6,12 @@ All notable changes to SNAIRK are documented here. The format is based on
 
 Since v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
+## v26.10.27
+
+### Changed
+- AI version: ChatGPT: GPT-6.1 Sol → GPT-6.1 Terra
+- AI version: Copilot: GPT-6.1 Sol → GPT-6.1 Terra
+
 ## v26.10.26
 
 ### Security

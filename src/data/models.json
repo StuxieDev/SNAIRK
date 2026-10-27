@@ -1,7 +1,7 @@
 {
   "chatgpt": {
-    "label": "GPT-6.1 Sol",
-    "id": "openai/gpt-6.1-sol"
+    "label": "GPT-6.1 Terra",
+    "id": "openai/gpt-6.1-terra"
   },
   "claude": {
     "label": "Opus 5.5",
@@ -16,8 +16,8 @@
     "id": "x-ai/grok-4.7"
   },
   "copilot": {
-    "label": "GPT-6.1 Sol",
-    "id": "openai/gpt-6.1-sol"
+    "label": "GPT-6.1 Terra",
+    "id": "openai/gpt-6.1-terra"
   },
   "perplexity": {
     "label": "Sonar Pro",
