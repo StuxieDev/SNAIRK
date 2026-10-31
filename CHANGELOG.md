@@ -6,6 +6,11 @@ All notable changes to SNAIRK are documented here. The format is based on
 
 Since v26.10.23 this project uses [Date Versioning](https://datevers.ing) (`YY.MM.DD`, the UTC release date, with `-1`, `-2`… for later releases the same day); earlier releases used Semantic Versioning.
 
+## v26.10.31
+
+### Changed
+- The footer's "A StuxieDev Project" line is in normal case, not capitals (the wide letter-spacing that went with the capitals is gone, and the text is a little larger), as on StuxieDev's other sites
+
 ## v26.10.27
 
 ### Changed

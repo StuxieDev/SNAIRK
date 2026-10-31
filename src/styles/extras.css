@@ -110,7 +110,7 @@ body{margin:0;background:#080808}
 :root[data-theme="light"] .foot-stux .brand-mark{filter:grayscale(1) brightness(.6)}
 .foot-stux .brand-mark-link{display:inline-flex}
 .foot-stux .brand-mark-link:hover .brand-mark,.foot-stux .brand-mark-link:focus-visible .brand-mark{filter:grayscale(0) brightness(1);opacity:1}
-.foot-project{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--t2)}
+.foot-project{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--t2)}
 .made-with{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:5px;font-size:12px;color:var(--t2)}
 .made-with a{color:inherit}
 .made-with svg{width:1em;height:1em;flex:none}
